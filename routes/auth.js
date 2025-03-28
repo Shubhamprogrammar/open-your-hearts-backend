@@ -4,8 +4,11 @@ const { body, validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
-const JWT_SECRET = "Open Your Hearts";
+const path = require('path');
+const dotenv = require('dotenv');
 
+dotenv.config();
+const JWT_SECRET = process.env.JWT_SECRET;
 router.post('/signup',
     [body('name', "Enter a valid name").isLength({ min: 3 }),
     body('email', "Enter a valid email").isEmail(),

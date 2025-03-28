@@ -1,5 +1,10 @@
 const mongoose = require("mongoose");
-const mongoURI = "mongodb://localhost:27017/Hearts"
+const process = require('process');
+const dotenv = require('dotenv')
+
+dotenv.config();
+
+const mongoURI = process.env.mongoURI;
 
 const connectToMongo = async ()=>{
     mongoose.connect(mongoURI);
