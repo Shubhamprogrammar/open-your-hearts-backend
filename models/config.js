@@ -7,11 +7,7 @@ dotenv.config();
 const mongoURI = process.env.mongoURI;
 
 const connectToMongo = async ()=>{
-    mongoose.connect(mongoURI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        ssl: true
-    });
+    mongoose.connect(mongoURI, {});
     console.log("Mongoose connected successfully");
 }
 
