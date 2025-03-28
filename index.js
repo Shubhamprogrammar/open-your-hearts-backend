@@ -3,13 +3,11 @@ const config = require('./models/config');
 const cors = require('cors');
 const process = require('process');
 const dotenv = require('dotenv');
-const path = require('path');
-const router = require('./routes/auth');
 
 dotenv.config();
 config();
 const app = express();
-const PORT = process.env.PORT ||5000;;
+const PORT = process.env.PORT ||5000;
 
 app.use(express.json());
 app.use(cors());

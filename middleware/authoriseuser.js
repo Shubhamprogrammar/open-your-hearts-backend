@@ -1,5 +1,7 @@
 const jwt = require('jsonwebtoken');
-const JWT_SECRET = "Open Your Hearts";
+const dotenv = require('dotenv');
+dotenv.config();
+const JWT_SECRET = process.env.JWT_SECRET;
 
 const authoriseuser = (req,res,next)=>{
     const token = req.header('auth-token');
