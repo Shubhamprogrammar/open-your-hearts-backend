@@ -12,8 +12,8 @@ https://github.com/Shubhamprogrammar/open-your-heart-frontend
 
 ---
 
-## 🌍 Live API
-🔗 **API Base URL:** https://openyourhearts.vercel.app/
+## 🌍 Live Demo
+🔗 **URL:** https://openyourhearts.vercel.app/
 
 ---
 
